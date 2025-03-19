@@ -2,22 +2,22 @@
 
 _A detailed guide to help users navigate and use the **Coleridge Initiative's** Administrative Data Research Facility (ADRF) effectively._
 
-_Last Modified: `git log -1 --format=%cd --date=short`_
+_Last Modified:_
 
 ---
 
 ## Table of Contents
-1. [Introduction](#introduction)  
-2. [ADRF Access and Account Set Up](#adrf-access-and-account-set-up)  
-3. [Onboarding Modules and Security Training](#onboarding-modules-and-security-training)
-4. [Features](#features)  
-5. [Usage Examples](#usage-examples)  
+1. [Introduction](#1-introduction)  
+2. [ADRF Access and Account Set Up](#2-adrf-access-and-account-set-up)  
+3. [Onboarding Modules and Security Training](#3-onboarding-modules-and-security-training)
+4. [Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
+5. [Accessing and Using Your Workspace](#5-accessing-and-using-your-workspace)  
 6. [Troubleshooting](#troubleshooting)  
 7. [FAQ](#faq)
 
 ---
 
-## Introduction
+## 1. Introduction
 
 Welcome to the [Coleridge Initiative’s](https://coleridgeinitiative.org/) Administrative Data Research Facility, or "**ADRF**" user guide. This is a living document intended to show new ADRF users how to use the platform for common tasks.
 
@@ -37,7 +37,7 @@ The ADRF follows the Five Safes Framework, a data management framework commonly 
 
 ---
 
-## ADRF Access and Account Set Up
+## 2. ADRF Access and Account Set Up
 
 ### Requesting an Account
 - **Agency-affiliated researcher**. If you are an agency-affiliated researcher, your agency will set up an ADRF account for you.
@@ -57,7 +57,7 @@ If you have any questions, please contact [support@coleridgeinitiative.org](mail
 
 ---
 
-## Onboarding Modules and Security Training
+## 3. Onboarding Modules and Security Training
 
 ### Management Portal
 The Management Portal web-based application is positioned primarily as the management and monitoring console for project and data stewards. It provides detailed insight on project configurations, user activity, user onboarding status, and overall cost of a project on the ADRF. We focus on four primary pillars of information a Project/Data Steward most often focuses on:
@@ -179,5 +179,77 @@ The Security Training Quiz needs to be completed after the Security Training Vid
   <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/security_quiz_complete.png alt="Security Quiz Complete">
 </p>
 
+---
 
+## 4. Do's and Don'ts for Discussing Data Hosted in the ADRF
+
+You **must protect the confidential data** that is hosted inside the ADRF in communicating with your teammates. The general rule is that you should never take any exact number out of the ADRF. This means you should never write down or share any number by text, screenshot, or share an image even with a team-mate. The rules have become more complicated now that everything is online, because even though your teammates are “safe people”, and Zoom conversations are password protected and encrypted, we’d rather err on the side of caution when sharing information over Zoom.
+
+To ensure **safe outputs**, the Coleridge Initiative works with an agency’s Data Steward to develop rigorous export review requirements catered to the specific needs of the partner agency. While you should make sure to acquaint yourself with the specific export rules associated with the confidential data you have been approved to access, **cheat sheet provided below** summarizes some of the rules that apply to discussing data before it has been exported from the ADRF and passed the ADRF team’s disclosure review. 
+
+If you are unsure about a specific situation, please ask reach out to the Coleridge Support Team at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org).
+
+### Exact Numbers
+Do not describe a statistic in exact numbers. If you would like to communicate these values while not in person, you can have a private discussion via the projects drive inside the ADRF.
+
+**Example**: If an average within a specific group was 5,000, you would need to convey this average on the projects drive.
+
+### Comparing Values
+When comparing values, you are permitted to say that one value is more than, less than, or about the same as another. However, you cannot refer to the exact difference between the two numbers.
+
+In practice, you can use pluses and minuses to convey differences between values for data that has not been exported from the ADRF.
+
+**Example**: “The mean for Group A was roughly the same as the mean for Group B, but these values were both greater than that of Group C.”
+
+### Percentages/Proportions
+Percentages and proportions also cannot be directly mentioned. Instead, you can refer to the percentage/proportion within 25%.
+
+**Example**: If a proportion was 30%, you could say “The proportion is about 25%” or “The proportion is between 25% and 50%.”
+
+---
+
+## 5. Accessing and Using Your Project Workspace
+A **project workspace** is a secure, isolated virtual environment in the ADRF within which an approved set of users can access a defined number of agency datasets. The project workspace is designed to allow approved researchers to access, analyze, and manipulate specific datasets relevant to their approved projects while maintaining strict data confidentiality and integrity. 
+
+Project workspace in the ADRF are isolated from each other. Even if a person is granted access to two project workspaces, the user can not access or copy files from one into the other. This is important because the two project workspaces might have access to different datasets. 
+
+### Logging into and Logging out of the ADRF
+This video linked below runs through the necessary steps for logging into and logging out of the ADRF.
+
+To watch the video, **right-click the image below** and choose **"Open link in new tab"** (by right-cicking, you will avoid leaving this page).
+
+[![Logging into ADRF](https://img.youtube.com/vi/_-AE_iOyF9w/0.jpg)](https://www.youtube.com/watch?v=_-AE_iOyF9w)
+
+### Virtual Desktop Environment
+#### What is a VDE?
+A **virtual desktop environment (VDE)** allows you to interact with a remote system as if it were your own personal computer. The majority of your standard desktop functions are available, but the programs, data, and permissions are all controlled by the remote administrator (Coleridge Initiative). Thus, you will be working in a familiar environment while accessing protected data, programs, and systems that would otherwise be difficult to distribute. The ADRF uses a standard Windows environment (Windows Server) and provides a variety of software packages to conduct your analysis. For more on Windows capabilities, see the section on Windows Settings.
+
+<p align="left">
+  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use1.png alt="Virtual Desktop Environment">
+</p>
+
+#### Temporary Nature of the Environment
+
+While the environment is similar to that on your home computer (for Windows users), there are a handful of key differences. The first is that the environment is temporary in nature. This means that if you are not using it for a prolonged period of time (default is four hours but can vary by project), running programs will stop running and the information stored in temporary locations will be deleted. You will receive on on-screen message before any sessions are terminated. For more on safe, non-temporary storage locations in the ADRF, see the section on Storing Analytic Results.
+
+Given the temporary nature of the ADRF, it is crucial to make sure that your work is saved—and saved in an appropriate location. Once this is complete and you are finished working, make sure that you log out of the ADRF instead of closing the window. To do this, click the rightmost icon on the top taskbar to open up the dropdown menu and select End Session. You will be prompted to double-check that your work is saved prior to ending your session and confirm that you want to end your session.
+
+### Modifying the Environment
+#### Establishing Personal Folders
+Establishing your own personal folders is one of the simplest, yet most important, steps to take when setting up your environment. As we note in the section on Storing Analytic Results, the two possible places to store your analytic results or files are in either the U: drive or the P: drive.
+
+You will find your personal folder in the U: drive. The folder name will include your Firstname and Lastname, and may additionally include your project workspace number. This is a personal workspace that only you can access in the ADRF.
+
+#### The U: Drive and the P: Drive
+The U: drive is your user drive; it’s where you will store any files you are working on. Only the user will have access to the U: drive. For example, if user A wants to share information with user B who is on the same project, user A will need to save files to a P: drive folder and not folders in their U: drive since user B will not be able to access user A’s U: drive.
+
+The P: drive is the project drive, which will be used to house project-specific folders. Thus, you and other collaborators on the same project will be able to save files to project drive folders.
+
+Both the U: drive and P: drive have defined resource limitations of 150GB. When the workspace exceeds these limits, users will not be able to create new files or save data. The ADRF will not alert users when they approach on 150GB used. Users can check their current usage by right clicking on the user folder and clicking on properties.
+
+#### Other Modifications
+The top taskbar contains shortcuts to the command prompt, multiple desktop windows, a temporary folder, settings, full-screen view, and toggling multiple monitors.
+<p align="left">
+  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use2.png alt="Taskbar">
+</p>
 
