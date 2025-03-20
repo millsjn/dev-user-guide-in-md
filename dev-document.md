@@ -14,8 +14,9 @@ _Last Modified:_
 5. [How to Access Data](#5-how-to-access-data)
 6. [Where to Do Your Work](#6-where-to-do-your-work)
 7. [How to Work Collaboratively in the ADRF](#7-how-to-work-collaboratively-in-the-adrf)
-8. [Troubleshooting](#troubleshooting)  
-9. [FAQ](#faq)
+8. [How to Export Output from the ADRF](#8-how-to-export-output-from-the-adrf)
+9. [Troubleshooting](#troubleshooting)  
+10. [FAQ](#faq)
 
 Additional sections to be added
 [Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
@@ -385,6 +386,15 @@ Again, remember that when working with teams you may not share the ADRF screen w
 
 The information contained in the ADRF is restricted to reside only in the ADRF for all purposes unless it passes Export Review. This means that it cannot be shared or potentially shared with any unauthorized parties. Do not write down any numbers or figures or tables corresponding to data in the ADRF. Copying and pasting is restricted, but manually circumventing this is also not permitted by your data agreements.
 
+---
+
+## 8. How to Export Output from the ADRF
+To provide ADRF users with the ability to draw from sensitive data, results that are exported from the ADRF must meet rigorous standards meant to protect privacy and confidentiality. To ensure that those standards are met, the ADRF Export Review team reviews each request to ensure that it follows formal guidelines that are set by the respective agency providing the data in partnership with the Coleridge Initiative. Prior to moving data into the ADRF from the agency, the Export Review team suggests default guidelines to implement, based on standard statistical approaches in the U.S. government [^1],[^2] as well as international standards [^3], [^4], and [^5]. The Data Steward from the agency supplying the data works with the team to amend these default rules in line with the agency’s requirements. If you are unsure about the review guidelines for the data you are using in the ADRF or if you have any questions relating to exports, please reach out to support@coleridgeinitiative.org before submitting an export request.
+
+To learn more about limiting disclosure more generally, please refer to the textbook or view the videos.
+
+Note: The Export Requester cannot be assigned as a reviewer of the same export.
+
 
 ---
 ---
@@ -605,4 +615,18 @@ df = pd.read_sql("SELECT * FROM projects.schema_name.table_name", cnxn)
 ``` stata
 odbc load, exec("select * from PATH_TO_TABLE") clear dsn("Redshift11_projects_DSN") user("adrf\user.name.project") password("password")
 ```
+
+
+---
+
+## References
+[^1]: Confidential Information Protection and Statistical Efficiency Act of 2002. (Washington, DC: U.S. GPO, 2002).
+
+[^2]: Federal Committee on Statistical Methodology. “Report on Statistical Disclosure Limitation Methodology,” 22 (Second Version, 2005). [https://nces.ed.gov/fcsm/pdf/spwp22.pdf](https://nces.ed.gov/fcsm/pdf/spwp22.pdf).
+
+[^3]: “How to Use Microdata Properly: Self-Study Material for the Users of Eurostat Microdata Sets.” (2018). [https://ec.europa.eu/eurostat/web/microdata/overview/self-study-material-for-microdata-users](https://ec.europa.eu/eurostat/web/microdata/overview/self-study-material-for-microdata-users).
+
+[^4]: Research Data Centre of the German Federal Employment Agency at the Institute for Employment Research. “Remote Data Access and On-Site Use at the FDZ of the BA at the IAB.” (2020, December 8). [http://doku.iab.de/fdz/access/Vorgaben_DAFE_EN.PDF](http://doku.iab.de/fdz/access/Vorgaben_DAFE_EN.PDF).
+
+[^5]: Welpton, Richard. Handbook on Statistical Disclosure Control for Outputs. (figshare, 2019). [https://doi.org/10.6084/m9.figshare.9958520.v1](https://doi.org/10.6084/m9.figshare.9958520.v1).
 
