@@ -321,6 +321,24 @@ Once open, you will need to connect to a Redshift server. Please follow the dire
 
 ## 5. How to Access Data
 
+This section provides information on how to locate the secure data you’ve been approved to access in the ADRF.
+
+The ADRF offers both unstructured and structured data storage. Data stored in databases are located in the ADRF's structured data storage. Other forms of data, such as flat files, CSVs, documentation, etc. are stored in the ADRF's unstructured data storage.
+- [Accessing data stored in unstructured data storage](#accessing-data-stored-in-unstructured-data-storage)
+- [Accessing data stored in structured data storage](#accessing-data-stored-in-structured-data-storage)
+
+**External Data and Code**: Please note that importing of external data and code is restricted to only Coleridge staff. Given the secure and protected environment provided by the ADRF, all code, data, and packages that are coming from outside of the ADRF must be carefully vetted to prevent leaks, disclosure, or unauthorized access. This means that there is no direct method for uploading data or code from your system to the ADRF. Please contact support@coleridgeinitiative.org for any questions or assistance on importing your own code, data, or packages.
+
+### Accessing data stored in unstructured data storage
+Unstructured data, such as CSVs, Stata DTAs, SAS data, are stored in the “G” drive. Project teams will have read-only access to the data folders in this drive that they have been approved to access.
+
+The G: Drive is located in the ADRF's file system. You can find it by going to the Folder icon in the Windows Task Bar.
+![Locating the G: Drive](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/acc1.png)
+
+### Accessing data stored in structured data storage
+Structured data, or data that are stored in relational databases, are stored in AWS Redshift, an MPP platform that is built on SQL and is specifically designed to handle larger data assets. Users access structured data either through **DBeaver** – the ADRF's Database Access tool – or by porting directly to Redshift through their preferred **statistical package** (like R, or Python).
+
+For detailed instructions on how to access data in structed data storage, please see the ADRF's [Redshift Querying Guide](#redshift-querying-guide)
 
 ---
 Breaks for future sections that need to be reorganized
@@ -356,19 +374,51 @@ Percentages and proportions also cannot be directly mentioned. Instead, you can 
 
 This document serves as an introduction to generating proficient Amazon Redshift queries. This is a generalized document meaning you will need to replace “schema_name” and “table_name” with the appropriate schema and table names used for your project.
 
-### Topics
-- [Data Access]
+**Note**: All data is stored under schemas in the projects database.
 
-### Data Access
+### Topics
+- [Data Access](#data-access)
+- [Using DBeaver to access a database schema](#using-dbeaver-to-access-a-database-schema)
+
+### Data access
 If you are approved to access data that are stored in a database, the data are housed in Redshift. To access those data, you will have to log in to Redshift within your workspace.
 
-
-
-You need to replace the “user.name.project” with your **project-based username**. The **project-based username** is your user folder name in the U:/ drive:
+You need to replace the “user.name.project” with your **project workspace username**. The **project workspace username** is your user folder name in the U:/ drive:
 
 ![Image of Project-Based User Name](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap1.png)
 
+**Note**: You will need to enter your specific user name when logging into Redshift. The password needed to access Redshift is the second password entered when logging into the ADRF as shown in the screen below: 
+![Image of Password Entry](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap2.png)
 
+### Using DBeaver to access a database schema
+To establish a connection to Redshift in DBeaver, first open DBeaver by clicking on the DBeaver icon located on the ADRF desktop and then double click on the server you wish to connect to. **Note**: All data is stored under schemas in the projects database.
+
+In the example below, we will connect to **Redshift11_projects**. After double clicking on Reshift11_projects, a window will appear asking for your **Username** and **Password**. 
+- In Username, enter **"adrf\"** followed by your **project workspace username** 
+- In Password, enter the password associated with your project workspace username
+![Complete the Username and Password fields](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap3.png)
+
+After completing the Username and Password fields, click **OK**. You will now have access to your data stored on the Redshift11_projects server.
+
+**Note**: Please make sure to enter **"adrf\"** before your project workspace username in the **Username** field. If you do not enter "adrf\", or accidently include a "/" instead of a "\", you will not be able to connect to Redshift. **If you are having trouble connecting, an incorrect entry in Username is most likely the culprit.**
+
+#### Creating Tables in PR/TR Schema
+When users create tables in their PR (Research Project) or TR (Training Project) schema, the table is initially permissioned to the user only. This is analogous to creating a document or file in your U drive: Only you have access to the newly created table.
+
+If you want to allow all individuals in your project workspace to access the table in the PR/TR schema, you will need to grant permission to the table to the rest of the users who have access to the PR or TR schema.
+
+You can do this by running the following code:
+`GRANT SELECT, UPDATE, DELETE, INSERT ON TABLE schema_name.table_name TO group db_xxxxxx_rw;`
+
+**Note**: Note: In the above code example replace schma_name with the pr_ or tr_ schema assigned to your workspace and replace table_name with the name of the table on which you want to grant access. Also, in the group name `db_xxxxxx_rw`, replace `xxxxxx` with your project code. This is the last 6 characters in your project based user name. This will start with either a T or a P.
+
+If you want to allow **only a single user** on your project to access the table, you will need to grant permission to that user. You can do this by running the following code:
+
+`GRANT SELECT, UPDATE, DELETE, INSERT ON TABLE schema_name.table_name to "IAM:first_name.last_name.project_code";`
+
+
+
+All data is stored under schemas in the projects database.
 
 
 
