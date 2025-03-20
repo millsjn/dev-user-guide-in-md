@@ -146,7 +146,8 @@ DBUSER='adrf\John.doe.p00002'
 DBPASSWD='xxxxxxxxxxxx'
 ```
 
-_**PLEASE** replace `user id` and `password` with your project workspace specific user id and password. 
+_
+**Note** replace `user id` and `password` with your project workspace specific user id and password. 
 
 This will ensure you don’t have your id and password in R code and then you can easily share your R code with others without sharing your ID and password._
 
