@@ -24,9 +24,6 @@ _Last Modified:_ 03/20/2025
 12. [Accessing ADRF Dashboards](#12-accessing-adrf-dashboards) 
 13. [FAQ](#faq)
 
-Additional sections to be added
-[Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
-[Redshift Querying Guide](#11-redshift-querying-guide)
 ---
 
 ## 1 Introduction
@@ -823,7 +820,6 @@ Once you enter the appropriate information and click “Log In,” your dashboar
 ## 13 Frequently Asked Questions (FAQ)
 
 ### Topics
-
 
 ### How do I set up my Multifactor Authentication
 You should be prompted to set up multifactor authentication when you create your account, the options are SMS, voice call, email and the Okta verify application.
