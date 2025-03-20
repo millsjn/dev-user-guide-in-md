@@ -3,6 +3,9 @@
 _A detailed guide to help users navigate and use the **Coleridge Initiative's** Administrative Data Research Facility (ADRF) effectively._
 
 _Last Modified:_ 03/20/2025
+<p>Last Updated: <span id="last-updated"></span></p>
+
+[Obtaining ADRF Access](obtaining-adrf-access.md)
 
 ---
 
