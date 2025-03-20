@@ -20,10 +20,10 @@ _Last Modified:_
 
 Additional sections to be added
 [Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
-[Redshift Querying Guide](#redshift-querying-guide)
+[Redshift Querying Guide](#11-redshift-querying-guide)
 ---
 
-## 1. Introduction
+## 1 Introduction
 
 Welcome to the [Coleridge Initiative’s](https://coleridgeinitiative.org/) Administrative Data Research Facility, or "**ADRF**" user guide. This is a living document intended to show new ADRF users how to use the platform for common tasks.
 
@@ -43,7 +43,7 @@ The ADRF follows the Five Safes Framework, a data management framework commonly 
 
 ---
 
-## 2. Obtaining ADRF Access
+## 2 Obtaining ADRF Access
 
 ### Topics
 - [Account Setup](#account-setup)
@@ -69,7 +69,7 @@ If you have any questions, please contact [support@coleridgeinitiative.org](mail
 
 ---
 
-## 3. Onboarding Modules and Security Training
+## 3 Onboarding Modules and Security Training
 
 ### Topics
 - [Management Portal](#management-portal)
@@ -199,7 +199,7 @@ The Security Training Quiz needs to be completed after the Security Training Vid
 
 ---
 
-## 4. How to Access and Use Your Project Workspace
+## 4 How to Access and Use Your Project Workspace
 
 ### Topics
 - 
@@ -320,9 +320,9 @@ Python is a general-purpose programming language. You can access Python in a mul
 #### DBeaver
 **DBeaver** is a universal tool for querying, editing, and managing data stored in Redshift databases. The ADRF stores data using AWS Redshift Server. DBeaver can be accessed through the desktop shortcut DBeaver or by looking it up using the search bar.
 
-Once open, you will need to connect to a Redshift server. Please follow the directions in the [Redshift Querying Guide](#redshift-querying-guide) to connect to the appropriate server.
+Once open, you will need to connect to a Redshift server. Please follow the directions in the [Redshift Querying Guide](#11-redshift-querying-guide) to connect to the appropriate server.
 
-## 5. How to Access Data
+## 5 How to Access Data
 
 This section provides information on how to locate the secure data you’ve been approved to access in the ADRF.
 
@@ -341,11 +341,11 @@ The G: Drive is located in the ADRF's file system. You can find it by going to t
 ### Accessing data stored in structured data storage
 Structured data, or data that are stored in relational databases, are stored in AWS Redshift, an MPP platform that is built on SQL and is specifically designed to handle larger data assets. Users access structured data either through **DBeaver** – the ADRF's Database Access tool – or by porting directly to Redshift through their preferred **statistical package** (like R, or Python).
 
-For detailed instructions on how to access data in structed data storage, please see the ADRF's [Redshift Querying Guide](#redshift-querying-guide)
+For detailed instructions on how to access data in structed data storage, please see the ADRF's [Redshift Querying Guide](#11-redshift-querying-guide)
 
 ---
 
-## 6. Where to Do Your Work
+## 6 Where to Do Your Work
 The sensitive data that you have been approved to access will either be stored in the ADRF's structured or unstructured stroage locations (see How to Access Data](#5-how-to-access-data)).
 
 ### Eligible locations to do your work
@@ -370,13 +370,13 @@ The G: drive (data), the L: drive (Libs), and the desktop are not eligible for l
 **Storage size** varies by project, but is capped at a predetermined amount. Additional storage costs may vary depending on the resource requirements.
 
 **Best Practices**: 
-- To save storage space, **avoid saving copies of raw data tables**. Instead, write code to **access data**. For detailed instructions on how to access data in structed data storage, please see the ADRF's [Redshift Querying Guide](#redshift-querying-guide)
+- To save storage space, **avoid saving copies of raw data tables**. Instead, write code to **access data**. For detailed instructions on how to access data in structed data storage, please see the ADRF's [Redshift Querying Guide](#11-redshift-querying-guide)
 - Organize folders in a way that makes sense for your particular project. For example, you might have folders for a particular analysis or sub-projects. Dates on file names can be helpful for version control.
 - Keep tabs on how much storage you are using compared to the allocated amount of storage.
 
 ---
 
-## 7. How to Work Collaboratively in the ADRF
+## 7 How to Work Collaboratively in the ADRF
 
 ### Shared Folders
 Shared folders within a project are a great way to share information with other members on a team project. Remember that when working with teams you may not share the ADRF screen (even project folders) with other members on video platforms or otherwise, whether or not your team members are working on the same project.
@@ -388,7 +388,7 @@ The information contained in the ADRF is restricted to reside only in the ADRF f
 
 ---
 
-## 8. How to Export Output from the ADRF
+## 8 How to Export Output from the ADRF
 To provide ADRF users with the ability to draw from sensitive data, results that are exported from the ADRF must meet rigorous standards meant to protect privacy and confidentiality. To ensure that those standards are met, the ADRF Export Review team reviews each request to ensure that it follows formal guidelines that are set by the respective agency providing the data in partnership with the Coleridge Initiative. Prior to moving data into the ADRF from the agency, the Export Review team suggests default guidelines to implement, based on standard statistical approaches in the U.S. government [^1],[^2] as well as international standards [^3], [^4], and [^5]. The Data Steward from the agency supplying the data works with the team to amend these default rules in line with the agency’s requirements. If you are unsure about the review guidelines for the data you are using in the ADRF or if you have any questions relating to exports, please reach out to [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org) before submitting an export request.
 
 To learn more about limiting disclosure more generally, please refer to the [Big Data and Social Science textbook](https://textbook.coleridgeinitiative.org) or right-click [here to view Coleridge's Privacy and Confidentiality video series](https://www.youtube.com/playlist?list=PLCtgqmGgzkEzwdPYKfrNHtOKFu3P5ErrU).
@@ -483,17 +483,8 @@ To request an export be reviewed, please follow the instructions below or you ca
 
 **Note**: To learn more about exporting results, you can watch an instructional video by [right-clicking this link](https://www.youtube.com/watch?v=qXG_i0v_bDQ).
 
-
-
-
-
- 
 ---
----
-Breaks for future sections that need to be reorganized
----
----
-## Do's and Don'ts for Discussing Data Hosted in the ADRF
+## 9 Do's and Don'ts for Discussing Data Hosted in the ADRF
 
 You **must protect the confidential data** that is hosted inside the ADRF in communicating with your teammates. The general rule is that you should never take any exact number out of the ADRF. This means you should never write down or share any number by text, screenshot, or share an image even with a team-mate. The rules have become more complicated now that everything is online, because even though your teammates are “safe people”, and Zoom conversations are password protected and encrypted, we’d rather err on the side of caution when sharing information over Zoom.
 
@@ -520,7 +511,57 @@ Percentages and proportions also cannot be directly mentioned. Instead, you can 
 
 ---
 
-## Redshift Querying Guide
+## 10  Adding Additional Packages in R/Python
+
+The ADRF has an internal package repository, so users can install packages for R and Python themselves.
+
+The repositories that are currently mirrored in the ADRF are [CRAN](https://cran.r-project.org/) for R packages and [PyPi.org](https://coleridge-initiative.github.io/adrf_onboarding_handbook/packages.html#:~:text=The%20repositories%20that%20are%20currently%20mirrored%20in%20the%20ADRF%20are%20CRAN%20for%20R%20packages%20and%20PyPi.org%20for%20Python.%20There%20is%20currently%20no%20access%20to%20packages%20hosted%20on%20Github%20or%20other%20mirrors.) for Python. There is currently no access to packages hosted on Github or other mirrors.
+
+**Note**: If you are working in a shared workspace for a project, each user in the project must install the packages, there is no shared package installation for projects.
+
+### Add additional R packages
+
+To install R packages, simply use the code below and the package will be installed from the repository. You will not have to re-install the package again, and to use the package load it with the library() function. For example:
+
+``` r
+install.packages("packagename")
+```
+
+** Example**: Installing `tidyverse`
+![Install tidyverse](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/rinstall.png)
+
+To install a specific package version you can specify:
+
+``` r
+install.packages("remotes")
+
+remotes::install_version("tidyverse", "1.3.2")
+```
+
+**Note**: We recommend starting R using Rstudio for best results, instead of double clicking on a R or Rmarkdown script.
+
+### Add additional Python packages
+
+Similar to R packages, Python packages may be installed using the Package Installer for Python (pip).
+
+**Note**: We recommend installing python packages from the command line. If you start Jupyter lab, and choose the Terminal tab:
+
+![If you start Juypter Lab, choose the Terminal tab](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/pythoninstall.png)
+
+Then install your package using pip, for example, to install the pandas package:
+
+![Example: pandas package installation](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/pip.png)
+
+Then you may use the package within your Jupyter notebook as usual.
+
+To install a **specific package version** type: 
+``` python
+pip install pandas==1.2.3
+```
+
+---
+
+### 11 Redshift Querying Guide
 
 This document serves as an introduction to generating proficient Amazon Redshift queries. This is a generalized document meaning you will need to replace “schema_name” and “table_name” with the appropriate schema and table names used for your project.
 
