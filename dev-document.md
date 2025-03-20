@@ -13,8 +13,9 @@ _Last Modified:_
 4. [How to Access and Use Your Project Workspace](#4-how-to-access-and-use-your-project-workspace)
 5. [How to Access Data](#5-how-to-access-data)
 6. [Where to Do Your Work](#6-where-to-do-your-work)
-7. [Troubleshooting](#troubleshooting)  
-8. [FAQ](#faq)
+7. [How to Work Collaboratively in the ADRF](#7-how-to-work-collaboratively-in-the-adrf)
+8. [Troubleshooting](#troubleshooting)  
+9. [FAQ](#faq)
 
 Additional sections to be added
 [Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
@@ -373,6 +374,20 @@ The G: drive (data), the L: drive (Libs), and the desktop are not eligible for l
 - Keep tabs on how much storage you are using compared to the allocated amount of storage.
 
 ---
+
+## 7. How to Work Collaboratively in the ADRF
+
+### Shared Folders
+Shared folders within a project are a great way to share information with other members on a team project. Remember that when working with teams you may not share the ADRF screen (even project folders) with other members on video platforms or otherwise, whether or not your team members are working on the same project.
+
+### Sharing Restrictions
+Again, remember that when working with teams you may not share the ADRF screen with other members on video platforms or otherwise, whether or not your team members are working on the same project.
+
+The information contained in the ADRF is restricted to reside only in the ADRF for all purposes unless it passes Export Review. This means that it cannot be shared or potentially shared with any unauthorized parties. Do not write down any numbers or figures or tables corresponding to data in the ADRF. Copying and pasting is restricted, but manually circumventing this is also not permitted by your data agreements.
+
+
+---
+---
 Breaks for future sections that need to be reorganized
 ---
 ---
@@ -402,6 +417,7 @@ Percentages and proportions also cannot be directly mentioned. Instead, you can 
 **Example**: If a proportion was 30%, you could say “The proportion is about 25%” or “The proportion is between 25% and 50%.”
 
 ---
+
 ## Redshift Querying Guide
 
 This document serves as an introduction to generating proficient Amazon Redshift queries. This is a generalized document meaning you will need to replace “schema_name” and “table_name” with the appropriate schema and table names used for your project.
