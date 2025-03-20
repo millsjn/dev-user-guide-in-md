@@ -380,9 +380,11 @@ This document serves as an introduction to generating proficient Amazon Redshift
 - [Data Access](#data-access)
 - [Using DBeaver to access a database schema](#using-dbeaver-to-access-a-database-schema)
   - [Creating tables in a PR or TR schema in Dbeaver](#creating-tables-in-a-pr-or-tr-schema-in-dbeaver)
-- [Connecting to a databse through a statistical program using an ODBC connection](#connecting-to-a-databse-through-a-statistical-program-using-an-odbc-connection)
-  - [Connecting to a databse using SAS](#connecting-to-a-databse-using-sas)
-
+- [Connecting to a database schema through a statistical program using an ODBC connection](#connecting-to-a-database-schema-through-a-statistical-program-using-an-odbc-connection)
+  - [Connecting to a database schema using SAS](#connecting-to-a-database-schema-using-sas)
+  - [Connecting to a database schema using R](#connecting-to-a-database-schema-using-r)
+  - [Connecting to a database schema using Python](#connecting-to-a-database-schema-using-python)
+  - [Connecting to a database schema using Stata](#connecting-to-a-database-schema-using-stata)
 ### Data access
 If you are approved to access data that are stored in a database, the data are housed in Redshift. To access those data, you will have to log in to Redshift within your workspace.
 
@@ -423,7 +425,7 @@ If you want to allow **only a single user** on your project to access the table,
 
 If you have any questions, please reach out to us at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org)
 
-### Connecting to a databse through a statistical program using an ODBC connection
+### Connecting to a database schema through a statistical program using an ODBC connection
 
 When connecting to the database using an ODBC connection, you need to use one of the following DSNs:
 
@@ -432,7 +434,7 @@ When connecting to the database using an ODBC connection, you need to use one of
 
 In the code examples below, the default DSN is `Redshift01_projects_DSN`.
 
-#### Connecting to a databse using SAS
+#### Connecting to a database schema using SAS
 Use the following code to connect to a databse using SAS:
 
 ``` sas
@@ -445,13 +447,13 @@ disconnect from mycon;
 quit;
 ```
 
-#### Connecting to a database using R
+#### Connecting to a database schema using R
 
-- [Using RJDBC to connect to a databse using R](#using-rdjbc-to-connect-to-a-databse-using-r) **(Recommended)**
-- [Using Renviron file to connect to a database using R](#using-renviron-file-to-connect-to-a-database-using-r)
+- [Using RJDBC to connect to a database schema using R](#using-rdjbc-to-connect-to-a-database-schema-using-r) **(Recommended)**
+- [Using Renviron file to connect to a database using R](#using-renviron-file-to-connect-to-a-database-schema-using-r)
 - [Best practices for loading large amounts of data in R](#best-practices-for-loading-large-amounts-of-data-in-r)
 
-##### Using RJDBC to connect to a databse using R (Recommended)
+##### Using RJDBC to connect to a database schema using R
 
 **Note**: To use this method, you may need to install the packages RJDBC and rstudioapi first.
 
@@ -478,7 +480,7 @@ driver <- JDBC("com.amazon.redshift.jdbc42.Driver",
 con <- dbConnect(driver, url, dbusr, rstudioapi::askForPassword())
 ```
 
-##### Using Renviron file to connect to a database using R
+##### Using Renviron file to connect to a database schema using R
 
 ``` r
 library(RJDBC)
