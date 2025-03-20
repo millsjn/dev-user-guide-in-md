@@ -15,8 +15,11 @@ _Last Modified:_
 6. [Where to Do Your Work](#6-where-to-do-your-work)
 7. [How to Work Collaboratively in the ADRF](#7-how-to-work-collaboratively-in-the-adrf)
 8. [How to Export Output from the ADRF](#8-how-to-export-output-from-the-adrf)
-9. [Special Topics](#9-special-topics)  
-10. [FAQ](#faq)
+9. [Do's and Don'ts for Discussing Data Hosted in the ADRF](#9-do's-and-don'ts-for-discussing-data-hosted-in-the-adrf)
+10. [Adding Additional Packages in R/Python](#10-adding-additional-packages-in-r/python)
+11. [Redshift Querying Guide](#11-redshift-querying-guide)
+12. [Accessing ADRF Dashboards](#12-accessing-adrf-dashboards) 
+13. [FAQ](#faq)
 
 Additional sections to be added
 [Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
