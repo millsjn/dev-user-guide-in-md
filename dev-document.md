@@ -11,7 +11,7 @@ _Last Modified:_
 2. [ADRF Access and Account Set Up](#2-adrf-access-and-account-set-up)  
 3. [Onboarding Modules and Security Training](#3-onboarding-modules-and-security-training)
 4. [Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
-5. [Accessing and Using Your Workspace](#5-accessing-and-using-your-workspace)  
+5. [How to Access and Use Your Project Workspace](#5-how-to-access-and-use-your-project-workspace)  
 6. [Troubleshooting](#troubleshooting)  
 7. [FAQ](#faq)
 
@@ -208,7 +208,7 @@ Percentages and proportions also cannot be directly mentioned. Instead, you can 
 
 ---
 
-## 5. Accessing and Using Your Project Workspace
+## 5. How to Access and Use Your Project Workspace
 A **project workspace** is a secure, isolated virtual environment in the ADRF within which an approved set of users can access a defined number of agency datasets. The project workspace is designed to allow approved researchers to access, analyze, and manipulate specific datasets relevant to their approved projects while maintaining strict data confidentiality and integrity. 
 
 Project workspace in the ADRF are isolated from each other. Even if a person is granted access to two project workspaces, the user can not access or copy files from one into the other. This is important because the two project workspaces might have access to different datasets. 
