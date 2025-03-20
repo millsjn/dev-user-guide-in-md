@@ -1,14 +1,19 @@
-![Coleridge Logo](coleridge-logo.png)
+---
 
-# ADRF User Guide
-
-_A detailed guide to help users navigate and use the **Coleridge Initiative's** Administrative Data Research Facility (ADRF) effectively._
-
-_Last Modified:_ 03/20/2025
+<p align="center">
+    <img src="coleridge-logo.png" alt="Coleridge Logo">
+</p>
 
 ---
 
-# Table of Contents
+# ADRF User Guide
+
+A detailed guide to help users navigate and use the **Coleridge Initiative's** Administrative Data Research Facility (ADRF) effectively.
+
+Last Modified: 03/20/2025
+
+
+## Table of Contents
 1. [Introduction](#1-introduction)  
 2. [Obtaining ADRF Access](#2-obtaining-adrf-access)  
 3. [Onboarding Modules and Security Training](#3-onboarding-modules-and-security-training)
