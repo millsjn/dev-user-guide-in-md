@@ -511,7 +511,7 @@ Percentages and proportions also cannot be directly mentioned. Instead, you can 
 
 ---
 
-## 10  Adding Additional Packages in R/Python
+## 10 Adding Additional Packages in R/Python
 
 The ADRF has an internal package repository, so users can install packages for R and Python themselves.
 
@@ -590,13 +590,13 @@ You need to replace the “user.name.project” with your **project workspace us
 To establish a connection to Redshift in DBeaver, first open DBeaver by clicking on the DBeaver icon located on the ADRF desktop and then double click on the server you wish to connect to. **Note**: All data is stored under schemas in the projects database.
 
 In the example below, we will connect to **Redshift11_projects**. After double clicking on Reshift11_projects, a window will appear asking for your **Username** and **Password**. 
-- In Username, enter **"adrf\"** followed by your **project workspace username** 
+- In Username, enter **"adrf\\"** followed by your **project workspace username** 
 - In Password, enter the password associated with your project workspace username
 ![Complete the Username and Password fields](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap3.png)
 
 After completing the Username and Password fields, click **OK**. You will now have access to your data stored on the Redshift11_projects server.
 
-**Note**: Please make sure to enter **"adrf\\"** before your project workspace username in the **Username** field. If you do not enter "adrf\", or accidently include a "/" instead of a "\", you will not be able to connect to Redshift. **If you are having trouble connecting, an incorrect entry in Username is most likely the culprit.**
+**Note**: Please make sure to enter **"adrf\\"** before your project workspace username in the **Username** field. If you do not enter "adrf\", or accidently include a "/" instead of a "\\", you will not be able to connect to Redshift. **If you are having trouble connecting, an incorrect entry in Username is most likely the culprit.**
 
 #### Creating tables in a PR or TR schema in Dbeaver
 When users create tables in their PR (Research Project) or TR (Training Project) schema, the table is initially permissioned to the user only. This is analogous to creating a document or file in your U drive: Only you have access to the newly created table.
