@@ -14,6 +14,8 @@ This document serves as an introduction to generating proficient Amazon Redshift
   - [Connecting to a database using Python](#connecting-to-a-database-using-python)
   - [Connecting to a database using Stata](#connecting-to-a-database-using-stata)
 - [Redshift Query Guidelines for Researchers](#redshift-query-guidelines-for-researchers)
+- [Query Tips and Best Practices](#query-tips-and-best-practices)
+
 ## Data access
 If you are approved to access data that are stored in a database, the data are housed in Redshift. To access those data, you will have to log in to Redshift within your workspace.
 
@@ -197,3 +199,18 @@ _Developing your query_. Here’s an example workflow to follow when developing 
 4. Apply any filters to those columns.
 5. If you need to aggregate data, aggregate a small number of rows
 6. Once you have a query returning the results you need, look for sections of the query to save as a Common Table Expression (CTE) to encapsulate that logic.
+
+## Query Tips and Best Practices
+
+### Tip 1: Use `SELECT <columns>` instead of `SELECT *`
+Specify the columns in the SELECT clause instead of using `SELECT *`. The unnecessary columns place extra load on the database, which slows down not just the single Amazon Redshift, but the whole system.
+
+**Inefficient**
+
+`SELECT * FROM projects.schema_name.table_name`
+
+This query fetches all the data stored in the table you choose which might not be required for a particular scenario.
+
+**Efficient**
+
+`SELECT col_A, col_B, col_C FROM projects.schema_name.table_name`
