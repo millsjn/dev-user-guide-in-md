@@ -379,6 +379,9 @@ This document serves as an introduction to generating proficient Amazon Redshift
 ### Topics
 - [Data Access](#data-access)
 - [Using DBeaver to access a database schema](#using-dbeaver-to-access-a-database-schema)
+  - [Creating tables in a PR or TR schema in Dbeaver](#creating-tables-in-a-pr-or-tr-schema-in-dbeaver)
+
+- [Connecting to a databse through a statistical program using an ODBC connection](#connecting-to-a-databse-through-a-statistical-program-using-an-odbc-connection)
 
 ### Data access
 If you are approved to access data that are stored in a database, the data are housed in Redshift. To access those data, you will have to log in to Redshift within your workspace.
@@ -402,7 +405,7 @@ After completing the Username and Password fields, click **OK**. You will now ha
 
 **Note**: Please make sure to enter **"adrf\"** before your project workspace username in the **Username** field. If you do not enter "adrf\", or accidently include a "/" instead of a "\", you will not be able to connect to Redshift. **If you are having trouble connecting, an incorrect entry in Username is most likely the culprit.**
 
-#### Creating Tables in PR/TR Schema
+#### Creating tables in a PR or TR schema in Dbeaver
 When users create tables in their PR (Research Project) or TR (Training Project) schema, the table is initially permissioned to the user only. This is analogous to creating a document or file in your U drive: Only you have access to the newly created table.
 
 If you want to allow all individuals in your project workspace to access the table in the PR/TR schema, you will need to grant permission to the table to the rest of the users who have access to the PR or TR schema.
@@ -416,7 +419,11 @@ If you want to allow **only a single user** on your project to access the table,
 
 `GRANT SELECT, UPDATE, DELETE, INSERT ON TABLE schema_name.table_name to "IAM:first_name.last_name.project_code";`
 
+**Note**: In the above code example replace schma_name with the pr_ or tr_ schema assigned to your workspace and replace table_name with the name of the table on which you want to grant access. Also, in `"IAM:first_name.last_name.project_code"` update `first_name.last_name.project_code` with the user name to whom you want to grant access to.
 
+If you have any questions, please reach out to us at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org)
+
+### Connecting to a databse through a statistical program using an ODBC connection
 
 All data is stored under schemas in the projects database.
 
