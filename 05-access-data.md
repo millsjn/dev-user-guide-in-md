@@ -3,8 +3,6 @@
 This section provides information on how to locate the secure data you’ve been approved to access in the ADRF.
 
 The ADRF offers both unstructured and structured data storage. Data stored in databases are located in the ADRF's structured data storage. Other forms of data, such as flat files, CSVs, documentation, etc. are stored in the ADRF's unstructured data storage.
-- [Accessing data stored in unstructured data storage](#accessing-data-stored-in-unstructured-data-storage)
-- [Accessing data stored in structured data storage](#accessing-data-stored-in-structured-data-storage)
 
 **External Data and Code**: Please note that importing of external data and code is restricted to only Coleridge staff. Given the secure and protected environment provided by the ADRF, all code, data, and packages that are coming from outside of the ADRF must be carefully vetted to prevent leaks, disclosure, or unauthorized access. This means that there is no direct method for uploading data or code from your system to the ADRF. Please contact support@coleridgeinitiative.org for any questions or assistance on importing your own code, data, or packages.
 
