@@ -10,11 +10,14 @@ _Last Modified:_
 1. [Introduction](#1-introduction)  
 2. [Obtaining ADRF Access](#2-obtaining-adrf-access)  
 3. [Onboarding Modules and Security Training](#3-onboarding-modules-and-security-training)
-4. [Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
-5. [How to Access and Use Your Project Workspace](#5-how-to-access-and-use-your-project-workspace)  
+4. [How to Access and Use Your Project Workspace](#4-how-to-access-and-use-your-project-workspace)
+5. [How to Access Data](#5-how-to-access-data)
 6. [Troubleshooting](#troubleshooting)  
 7. [FAQ](#faq)
 
+Additional sections to be added
+[Do's and Don'ts for Discussing Data Hosted in the ADRF](#4-dos-and-donts-for-discussing-data-hosted-in-the-adrf)  
+[Redshift Querying Guide](#redshift-querying-guide)
 ---
 
 ## 1. Introduction
@@ -193,34 +196,11 @@ The Security Training Quiz needs to be completed after the Security Training Vid
 
 ---
 
-## 4. Do's and Don'ts for Discussing Data Hosted in the ADRF
+## 4. How to Access and Use Your Project Workspace
 
-You **must protect the confidential data** that is hosted inside the ADRF in communicating with your teammates. The general rule is that you should never take any exact number out of the ADRF. This means you should never write down or share any number by text, screenshot, or share an image even with a team-mate. The rules have become more complicated now that everything is online, because even though your teammates are “safe people”, and Zoom conversations are password protected and encrypted, we’d rather err on the side of caution when sharing information over Zoom.
+### Topics
+- 
 
-To ensure **safe outputs**, the Coleridge Initiative works with an agency’s Data Steward to develop rigorous export review requirements catered to the specific needs of the partner agency. While you should make sure to acquaint yourself with the specific export rules associated with the confidential data you have been approved to access, **cheat sheet provided below** summarizes some of the rules that apply to discussing data before it has been exported from the ADRF and passed the ADRF team’s disclosure review. 
-
-If you are unsure about a specific situation, please ask reach out to the Coleridge Support Team at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org).
-
-### Exact Numbers
-Do not describe a statistic in exact numbers. If you would like to communicate these values while not in person, you can have a private discussion via the projects drive inside the ADRF.
-
-**Example**: If an average within a specific group was 5,000, you would need to convey this average on the projects drive.
-
-### Comparing Values
-When comparing values, you are permitted to say that one value is more than, less than, or about the same as another. However, you cannot refer to the exact difference between the two numbers.
-
-In practice, you can use pluses and minuses to convey differences between values for data that has not been exported from the ADRF.
-
-**Example**: “The mean for Group A was roughly the same as the mean for Group B, but these values were both greater than that of Group C.”
-
-### Percentages/Proportions
-Percentages and proportions also cannot be directly mentioned. Instead, you can refer to the percentage/proportion within 25%.
-
-**Example**: If a proportion was 30%, you could say “The proportion is about 25%” or “The proportion is between 25% and 50%.”
-
----
-
-## 5. How to Access and Use Your Project Workspace
 A **project workspace** is a secure, isolated virtual environment in the ADRF within which an approved set of users can access a defined number of agency datasets. The project workspace is designed to allow approved researchers to access, analyze, and manipulate specific datasets relevant to their approved projects while maintaining strict data confidentiality and integrity. 
 
 Project workspace in the ADRF are isolated from each other. Even if a person is granted access to two project workspaces, the user can not access or copy files from one into the other. This is important because the two project workspaces might have access to different datasets. 
@@ -321,4 +301,56 @@ Python is a general-purpose programming language. You can access Python in a mul
 
 #### R
 
-[stopping here]
+**R** is a general-purpose programming language. You may access R in one of three ways:
+
+1. **Through RStudio**. This is an integrated development environment (IDE) for R. You can run R code, display variables, debug R code, do inline visualizations, and more. Open RStudio through the desktop shortcut, or type RStudio in the start menu.
+2. 
+3. **Through JupyterLab**. Open JupyterLab and make sure your directory is set appropriately in the file browser. Once there, in your new Launcher window, click the R icon.
+
+![Using R in JuypterLab](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use10.png)
+
+3. **Through the R GUI (graphical user interface)**. Type R in the search bar and click to open the RGui.
+
+#### Stata
+**Stata** is a general-purpose statistical so#ware package. Stata can be accessed through the desktop shortcut StataMP 16 or by searching for it using the search or menu bar, or through JupyterLab.
+
+#### DBeaver
+**DBeaver** is a universal tool for querying, editing, and managing data stored in Redshift databases. The ADRF stores data using AWS Redshift Server. DBeaver can be accessed through the desktop shortcut DBeaver or by looking it up using the search bar.
+
+Once open, you will need to connect to a Redshift server. Please follow the directions in the [Redshift Querying Guide](#redshift-querying-guide) to connect to the appropriate server.
+
+## 5. How to Access Data
+
+
+---
+Breaks for future sections that need to be reorganized
+---
+---
+## Do's and Don'ts for Discussing Data Hosted in the ADRF
+
+You **must protect the confidential data** that is hosted inside the ADRF in communicating with your teammates. The general rule is that you should never take any exact number out of the ADRF. This means you should never write down or share any number by text, screenshot, or share an image even with a team-mate. The rules have become more complicated now that everything is online, because even though your teammates are “safe people”, and Zoom conversations are password protected and encrypted, we’d rather err on the side of caution when sharing information over Zoom.
+
+To ensure **safe outputs**, the Coleridge Initiative works with an agency’s Data Steward to develop rigorous export review requirements catered to the specific needs of the partner agency. While you should make sure to acquaint yourself with the specific export rules associated with the confidential data you have been approved to access, **cheat sheet provided below** summarizes some of the rules that apply to discussing data before it has been exported from the ADRF and passed the ADRF team’s disclosure review. 
+
+If you are unsure about a specific situation, please ask reach out to the Coleridge Support Team at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org).
+
+### Exact Numbers
+Do not describe a statistic in exact numbers. If you would like to communicate these values while not in person, you can have a private discussion via the projects drive inside the ADRF.
+
+**Example**: If an average within a specific group was 5,000, you would need to convey this average on the projects drive.
+
+### Comparing Values
+When comparing values, you are permitted to say that one value is more than, less than, or about the same as another. However, you cannot refer to the exact difference between the two numbers.
+
+In practice, you can use pluses and minuses to convey differences between values for data that has not been exported from the ADRF.
+
+**Example**: “The mean for Group A was roughly the same as the mean for Group B, but these values were both greater than that of Group C.”
+
+### Percentages/Proportions
+Percentages and proportions also cannot be directly mentioned. Instead, you can refer to the percentage/proportion within 25%.
+
+**Example**: If a proportion was 30%, you could say “The proportion is about 25%” or “The proportion is between 25% and 50%.”
+
+---
+## Redshift Querying Guide
+
