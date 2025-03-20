@@ -816,7 +816,7 @@ Here, please enter:
 
 ![Enter your credentials](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/db_LDAP.png)
 
-Once you enter the appropriate information and click “Log In,” your dashboard should begin to load. This again may take a minute or two - if you run into any issues, please reach out to us at [support@coleridgeinitiative.org][(mailto:support@coleridgeinitiative.org).
+Once you enter the appropriate information and click “Log In,” your dashboard should begin to load. This again may take a minute or two - if you run into any issues, please reach out to us at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org).
 
 ---
 
