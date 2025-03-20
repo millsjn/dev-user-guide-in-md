@@ -15,7 +15,7 @@ _Last Modified:_
 6. [Where to Do Your Work](#6-where-to-do-your-work)
 7. [How to Work Collaboratively in the ADRF](#7-how-to-work-collaboratively-in-the-adrf)
 8. [How to Export Output from the ADRF](#8-how-to-export-output-from-the-adrf)
-9. [Troubleshooting](#troubleshooting)  
+9. [Special Topics](#9-special-topics)  
 10. [FAQ](#faq)
 
 Additional sections to be added
