@@ -569,13 +569,13 @@ This document serves as an introduction to generating proficient Amazon Redshift
 
 ### Topics
 - [Data Access](#data-access)
-- [Using DBeaver to access a database schema](#using-dbeaver-to-access-a-database-schema)
+- [Using DBeaver to access a database](#using-dbeaver-to-access-a-database)
   - [Creating tables in a PR or TR schema in Dbeaver](#creating-tables-in-a-pr-or-tr-schema-in-dbeaver)
-- [Connecting to a database schema through a statistical program using an ODBC connection](#connecting-to-a-database-schema-through-a-statistical-program-using-an-odbc-connection)
-  - [Connecting to a database schema using SAS](#connecting-to-a-database-schema-using-sas)
-  - [Connecting to a database schema using R](#connecting-to-a-database-schema-using-r)
-  - [Connecting to a database schema using Python](#connecting-to-a-database-schema-using-python)
-  - [Connecting to a database schema using Stata](#connecting-to-a-database-schema-using-stata)
+- [Connecting to a database through a statistical program using an ODBC connection](#connecting-to-a-database-through-a-statistical-program-using-an-odbc-connection)
+  - [Connecting to a database using SAS](#connecting-to-a-database-using-sas)
+  - [Connecting to a database using R](#connecting-to-a-database-using-r)
+  - [Connecting to a database using Python](#connecting-to-a-database-using-python)
+  - [Connecting to a database using Stata](#connecting-to-a-database-using-stata)
 ### Data access
 If you are approved to access data that are stored in a database, the data are housed in Redshift. To access those data, you will have to log in to Redshift within your workspace.
 
@@ -586,7 +586,7 @@ You need to replace the “user.name.project” with your **project workspace us
 **Note**: You will need to enter your specific user name when logging into Redshift. The password needed to access Redshift is the second password entered when logging into the ADRF as shown in the screen below: 
 ![Image of Password Entry](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap2.png)
 
-### Using DBeaver to access a database schema
+### Using DBeaver to access a database
 To establish a connection to Redshift in DBeaver, first open DBeaver by clicking on the DBeaver icon located on the ADRF desktop and then double click on the server you wish to connect to. **Note**: All data is stored under schemas in the projects database.
 
 In the example below, we will connect to **Redshift11_projects**. After double clicking on Reshift11_projects, a window will appear asking for your **Username** and **Password**. 
@@ -596,7 +596,7 @@ In the example below, we will connect to **Redshift11_projects**. After double c
 
 After completing the Username and Password fields, click **OK**. You will now have access to your data stored on the Redshift11_projects server.
 
-**Note**: Please make sure to enter **"adrf\"** before your project workspace username in the **Username** field. If you do not enter "adrf\", or accidently include a "/" instead of a "\", you will not be able to connect to Redshift. **If you are having trouble connecting, an incorrect entry in Username is most likely the culprit.**
+**Note**: Please make sure to enter **"adrf\\"** before your project workspace username in the **Username** field. If you do not enter "adrf\", or accidently include a "/" instead of a "\", you will not be able to connect to Redshift. **If you are having trouble connecting, an incorrect entry in Username is most likely the culprit.**
 
 #### Creating tables in a PR or TR schema in Dbeaver
 When users create tables in their PR (Research Project) or TR (Training Project) schema, the table is initially permissioned to the user only. This is analogous to creating a document or file in your U drive: Only you have access to the newly created table.
@@ -616,7 +616,7 @@ If you want to allow **only a single user** on your project to access the table,
 
 If you have any questions, please reach out to us at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org)
 
-### Connecting to a database schema through a statistical program using an ODBC connection
+### Connecting to a database through a statistical program using an ODBC connection
 
 When connecting to the database using an ODBC connection, you need to use one of the following DSNs:
 
@@ -626,12 +626,12 @@ When connecting to the database using an ODBC connection, you need to use one of
 In the code examples below, the default DSN is `Redshift01_projects_DSN`.
 
 **Topics:**
-- [Connecting to a database schema using SAS](#connecting-to-a-database-schema-using-sas)
-- [Connecting to a database schema using R](#connecting-to-a-database-schema-using-r)
-- [Connecting to a database schema using Python](#connecting-to-a-database-schema-using-python)
-- [Connecting to a database schema using Stata](#connecting-to-a-database-schema-using-stata)
+- [Connecting to a database using SAS](#connecting-to-a-database-using-sas)
+- [Connecting to a database using R](#connecting-to-a-database-using-r)
+- [Connecting to a database using Python](#connecting-to-a-database-using-python)
+- [Connecting to a database using Stata](#connecting-to-a-database-using-stata)
 
-#### Connecting to a database schema using SAS
+#### Connecting to a database using SAS
 Use the following code to connect to a databse using SAS:
 
 ``` sas
@@ -644,13 +644,13 @@ disconnect from mycon;
 quit;
 ```
 
-#### Connecting to a database schema using R
+#### Connecting to a database using R
 
-- [Using RJDBC to connect to a database schema using R](#using-rdjbc-to-connect-to-a-database-schema-using-r) **(Recommended)**
-- [Using Renviron file to connect to a database using R](#using-renviron-file-to-connect-to-a-database-schema-using-r)
+- [Recommended method for connecting to a database using R](#recommend-method-for-connecting-to-a-database-using-r)
+- [Using Renviron file to connect to a database using R](#using-renviron-file-to-connect-to-a-database-using-r)
 - [Best practices for loading large amounts of data in R](#best-practices-for-loading-large-amounts-of-data-in-r)
 
-##### Using RJDBC to connect to a database schema using R
+##### Recommended method for connecting to a database using R
 
 **Note**: To use this method, you may need to install the packages RJDBC and rstudioapi first.
 
@@ -677,7 +677,7 @@ driver <- JDBC("com.amazon.redshift.jdbc42.Driver",
 con <- dbConnect(driver, url, dbusr, rstudioapi::askForPassword())
 ```
 
-##### Using Renviron file to connect to a database schema using R
+##### Using Renviron file to connect to a database using R
 
 ``` r
 library(RJDBC)
@@ -736,7 +736,7 @@ qry <- "GRANT SELECT ON TABLE schema.table_name TO group <group_name>;"
 dbSendUpdate(conn,qry)
 ```
 
-### Connecting to a database schema using Python
+### Connecting to a database using Python
 ``` python
 import pyodbc
 import pandas as pd
@@ -744,7 +744,7 @@ cnxn = pyodbc.connect('DSN=Redshift01_projects_DSN; UID=adrf\user.name.project; 
 df = pd.read_sql("SELECT * FROM projects.schema_name.table_name", cnxn)
 ```
 
-### Connecting to a database schema using Stata
+### Connecting to a database using Stata
 ``` stata
 odbc load, exec("select * from PATH_TO_TABLE") clear dsn("Redshift11_projects_DSN") user("adrf\user.name.project") password("password")
 ```
