@@ -101,6 +101,16 @@ To request an export be reviewed, please follow the instructions below or you ca
 
 **Note**: To learn more about exporting results, you can watch an instructional video by [right-clicking this link](https://www.youtube.com/watch?v=qXG_i0v_bDQ).
 
+[^1]: Confidential Information Protection and Statistical Efficiency Act of 2002. (Washington, DC: U.S. GPO, 2002).
+
+[^2]: Federal Committee on Statistical Methodology. “Report on Statistical Disclosure Limitation Methodology,” 22 (Second Version, 2005). [https://nces.ed.gov/fcsm/pdf/spwp22.pdf](https://nces.ed.gov/fcsm/pdf/spwp22.pdf).
+
+[^3]: “How to Use Microdata Properly: Self-Study Material for the Users of Eurostat Microdata Sets.” (2018). [https://ec.europa.eu/eurostat/web/microdata/overview/self-study-material-for-microdata-users](https://ec.europa.eu/eurostat/web/microdata/overview/self-study-material-for-microdata-users).
+
+[^4]: Research Data Centre of the German Federal Employment Agency at the Institute for Employment Research. “Remote Data Access and On-Site Use at the FDZ of the BA at the IAB.” (2020, December 8). [http://doku.iab.de/fdz/access/Vorgaben_DAFE_EN.PDF](http://doku.iab.de/fdz/access/Vorgaben_DAFE_EN.PDF).
+
+[^5]: Welpton, Richard. Handbook on Statistical Disclosure Control for Outputs. (figshare, 2019). [https://doi.org/10.6084/m9.figshare.9958520.v1](https://doi.org/10.6084/m9.figshare.9958520.v1).
+
 ---
 
-[⬅️ Previous: How to Work Collaboratively in the ADRF](07-collaborate.md) | [Next: [Do's and Don'ts for Discussing Data Hosted in the ADRF ➡️](09-dos-and-donts.md)
+[⬅️ Previous: How to Work Collaboratively in the ADRF](07-collaborate.md) | [Back to Home](0-cover.md) | [Next: [Do's and Don'ts for Discussing Data Hosted in the ADRF ➡️](09-dos-and-donts.md)
