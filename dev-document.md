@@ -380,8 +380,8 @@ This document serves as an introduction to generating proficient Amazon Redshift
 - [Data Access](#data-access)
 - [Using DBeaver to access a database schema](#using-dbeaver-to-access-a-database-schema)
   - [Creating tables in a PR or TR schema in Dbeaver](#creating-tables-in-a-pr-or-tr-schema-in-dbeaver)
-
 - [Connecting to a databse through a statistical program using an ODBC connection](#connecting-to-a-databse-through-a-statistical-program-using-an-odbc-connection)
+  - [Connecting to a databse using SAS](#connecting-to-a-databse-using-sas)
 
 ### Data access
 If you are approved to access data that are stored in a database, the data are housed in Redshift. To access those data, you will have to log in to Redshift within your workspace.
@@ -425,7 +425,105 @@ If you have any questions, please reach out to us at [support@coleridgeinitiativ
 
 ### Connecting to a databse through a statistical program using an ODBC connection
 
-All data is stored under schemas in the projects database.
+When connecting to the database using an ODBC connection, you need to use one of the following DSNs:
+
+- `Redshift01_projects_DSN`
+- `Redshift11_projects_DSN`
+
+In the code examples below, the default DSN is `Redshift01_projects_DSN`.
+
+#### Connecting to a databse using SAS
+Use the following code to connect to a databse using SAS:
+
+``` sas
+proc sql;
+connect to odbc as my con
+(datasrc=Redshift01_projects_DSN user=adrf\user.name.project password=password);
+select * from connection to mycon
+(select * form projects.schema.table);
+disconnect from mycon;
+quit;
+```
+
+#### Connecting to a database using R
+
+- [Using RJDBC to connect to a databse using R](#using-rdjbc-to-connect-to-a-databse-using-r) **(Recommended)**
+- [Using Renviron file to connect to a database using R](#using-renviron-file-to-connect-to-a-database-using-r)
+- [Best practices for loading large amounts of data in R](#best-practices-for-loading-large-amounts-of-data-in-r)
+
+##### Using RJDBC to connect to a databse using R (Recommended)
+
+**Note**: To use this method, you may need to install the packages RJDBC and rstudioapi first.
+
+``` r
+library(RJDBC)
+
+# Create username
+dbusr=paste("ADRF\\", Sys.getenv("USERNAME"), sep= '')                                                                                
+
+# Database URL
+url <- paste0("jdbc:redshift:iam://adrf-redshift01.cdy8ch2udktk.us-gov-west-1.redshift.amazonaws.com:5439/projects;",
+              "loginToRp=urn:amazon:webservices:govcloud;",
+              "ssl=true;",
+              "AutoCreate=true;",
+              "idp_host=adfs.adrf.net;",
+              "idp_port=443;",
+              "ssl_insecure=true;",
+              "plugin_name=com.amazon.redshift.plugin.AdfsCredentialsProvider")
+
+# Redshift JDBC Driver Setting
+driver <- JDBC("com.amazon.redshift.jdbc42.Driver",
+               classPath = "C:\\drivers\\redshift_withsdk\\redshift-jdbc42-2.1.0.12\\redshift-jdbc42-2.1.0.12.jar",
+               identifier.quote="`")
+con <- dbConnect(driver, url, dbusr, rstudioapi::askForPassword())
+```
+
+##### Using Renviron file to connect to a database using R
+
+``` r
+library(RJDBC)
+dbusr=Sys.getenv("DBUSER")                                                                    dbpswd=Sys.getenv("DBPASSWD")
+
+# Database URL
+url <- paste0("jdbc:redshift:iam://adrf-redshift01.cdy8ch2udktk.us-gov-west-1.redshift.amazonaws.com:5439/projects;",
+"loginToRp=urn:amazon:webservices:govcloud;",
+"ssl=true;",
+"AutoCreate=true;",
+"idp_host=adfs.adrf.net;",
+"idp_port=443;",
+"ssl_insecure=true;",
+"plugin_name=com.amazon.redshift.plugin.AdfsCredentialsProvider")
+
+# Redshift JDBC Driver Setting
+driver <- JDBC("com.amazon.redshift.jdbc42.Driver",
+classPath = "C:\\drivers\\redshift_withsdk\\redshift-jdbc42-2.1.0.12\\redshift-jdbc42-2.1.0.12.jar",
+identifier.quote="`")
+conn <- dbConnect(driver, url, dbusr, dbpswd)
+```
+**Note**: For the above code to work, please create a file name .Renviron in your user folder (user folder is something like i.e. `u:\John.doe.p00002`) And `.Renviron` file should contain the following:
+
+``` r
+DBUSER='adrf\John.doe.p00002'
+DBPASSWD='xxxxxxxxxxxx'
+```
+
+_**PLEASE** replace `user id` and `password` with your project workspace specific user id and password. 
+
+This will ensure you don’t have your id and password in R code and then you can easily share your R code with others without sharing your ID and password._
+
+##### Best practices for loading large amounts of data in R
 
 
+### Connecting to a database schema using Python
+``` python
+import pyodbc
+import pandas as pd
+cnxn = pyodbc.connect('DSN=Redshift01_projects_DSN; UID=adrf\user.name.project; PWD=password')
+df = pd.read_sql("SELECT * FROM projects.schema_name.table_name", cnxn)
+```
+
+### Connecting to a database schema using Stata
+``` stata
+odbc load, exec("select * from PATH_TO_TABLE") clear dsn("Redshift11_projects_DSN") user("adrf\user.name.project") password("password")
+```
 
