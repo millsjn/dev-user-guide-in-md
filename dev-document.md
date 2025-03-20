@@ -354,3 +354,21 @@ Percentages and proportions also cannot be directly mentioned. Instead, you can 
 ---
 ## Redshift Querying Guide
 
+This document serves as an introduction to generating proficient Amazon Redshift queries. This is a generalized document meaning you will need to replace “schema_name” and “table_name” with the appropriate schema and table names used for your project.
+
+### Topics
+- [Data Access]
+
+### Data Access
+If you are approved to access data that are stored in a database, the data are housed in Redshift. To access those data, you will have to log in to Redshift within your workspace.
+
+
+
+You need to replace the “user.name.project” with your **project-based username**. The **project-based username** is your user folder name in the U:/ drive:
+
+![Image of Project-Based User Name](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap1.png)
+
+
+
+
+
