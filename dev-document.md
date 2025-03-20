@@ -434,6 +434,12 @@ When connecting to the database using an ODBC connection, you need to use one of
 
 In the code examples below, the default DSN is `Redshift01_projects_DSN`.
 
+**Topics:**
+- [Connecting to a database schema using SAS](#connecting-to-a-database-schema-using-sas)
+- [Connecting to a database schema using R](#connecting-to-a-database-schema-using-r)
+- [Connecting to a database schema using Python](#connecting-to-a-database-schema-using-python)
+- [Connecting to a database schema using Stata](#connecting-to-a-database-schema-using-stata)
+
 #### Connecting to a database schema using SAS
 Use the following code to connect to a databse using SAS:
 
@@ -515,6 +521,29 @@ This will ensure you don’t have your id and password in R code and then you ca
 
 ##### Best practices for loading large amounts of data in R
 
+##### SQL Basics with R Programming
+To ensure R can efficiently manage large amounts of data, please add the following lines of code to your R script before any packages are loaded:
+
+``` r
+options(java.parameters = c("-XX:+UseConcMarkSweepGC", "-Xmx8192m"))
+gc()
+```
+
+##### Best practices for writing tables to Redshift
+
+When writing an R data frame to Redshift use the following code as an example:
+
+``` r
+# Note: replace the table_name with the name of the data frame you wish to write to Redshift
+
+DBI::dbWriteTable(conn = conn, #name of the connection 
+name = "schema_name.table_name", #name of table to save df to 
+value = df_name, #name of df to write to Redshift 
+overwrite = TRUE) #if you want to overwrite a current table, otherwise FALSE
+
+qry <- "GRANT SELECT ON TABLE schema.table_name TO group <group_name>;"
+dbSendUpdate(conn,qry)
+```
 
 ### Connecting to a database schema using Python
 ``` python
