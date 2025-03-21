@@ -22,7 +22,6 @@ Once inside the Management Portal, you have access to your personal workspace se
 
 ![Management Portal Insights Page](images/mp_home.png) 
 
-
 ## Accessing the Onboarding Tasks
 To gain access to your ADRF project workspace, you must first complete 3 required ADRF onboarding tasks: 
 1. **Signing the ADRF Terms of Use agreement**. Users must comply with the Terms of Use when working in the ADRF. The Agreement covers rules of behavior within ADRF and guidelines for discussing ADRF content prior to passing disclosure review. It asks users to agree to a series of principles governing dataset use, behavior, and data export procedures, and to acknowledge the consequences of violating the Terms.
@@ -54,16 +53,13 @@ The Terms of Use need to be completed before you are given access to the data an
 
 ![Terms of Use Tile](images/terms_of_use_tile.png)
 
-
 3. Click on **“Sign with DocuSign”**
 
 ![Sign with DocuSign](images/sign_docuSign.png)
 
-
 4. You will then be redirected to the DocuSign signing page. **Click “Continue”** on the upper right corner.
 
 ![Click Continue](images/docusign_continue.png)
-
 
 5. Click **“Start”** to begin.
 
@@ -72,7 +68,6 @@ The Terms of Use need to be completed before you are given access to the data an
 6. If you have already configured a signature, click on the **yellow “Sign” button** to apply it. Otherwise, follow the prompts to configure your electronic signature.
 
 ![Click the yellow Sign button to apply your signature](images/sign.png)
-
 
 7. Once the signature is applied, click **“Finish”**.
 
