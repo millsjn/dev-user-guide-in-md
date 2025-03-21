@@ -29,4 +29,4 @@ Percentages and proportions also cannot be directly mentioned. Instead, you can 
 
 ---
 
-[⬅️ Previous: Obtaining ADRF Access](02-access.md) | [Back to Home](0-cover.md) | [Next: How to Access and Use Your Project Workspace➡️](04-access-and-use.md ))
+[⬅️ Previous: Obtaining ADRF Access](02-access.md) | [Back to Home](00-cover.md) | [Next: How to Access and Use Your Project Workspace➡️](04-access-and-use.md ))

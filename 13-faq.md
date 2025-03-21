@@ -77,4 +77,4 @@ The best practice is to process the data where it is currently located.  If the 
 
 ---
 
-[⬅️ Previous: Accessing ADRF Dashboards](12-dashboards.md)  | [Back to Home](0-cover.md) |
+[⬅️ Previous: Accessing ADRF Dashboards](12-dashboards.md)  | [Back to Home](00-cover.md) |

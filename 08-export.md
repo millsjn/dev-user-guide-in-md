@@ -113,4 +113,4 @@ To request an export be reviewed, please follow the instructions below or you ca
 
 ---
 
-[⬅️ Previous: How to Work Collaboratively in the ADRF](07-collaborate.md) | [Back to Home](0-cover.md) | [Next: [Do's and Don'ts for Discussing Data Hosted in the ADRF ➡️](09-dos-and-donts.md)
+[⬅️ Previous: How to Work Collaboratively in the ADRF](07-collaborate.md) | [Back to Home](00-cover.md) | [Next: [Do's and Don'ts for Discussing Data Hosted in the ADRF ➡️](09-dos-and-donts.md)
