@@ -1,6 +1,6 @@
 # 11 Redshift Querying Guide
 
-This document serves as an introduction to generating proficient Amazon Redshift queries. This is a generalized document meaning you will need to replace “schema_name” and “table_name” with the appropriate schema and table names used for your project.
+This section provides an introduction to generating proficient Amazon Redshift queries. This is a generalized document meaning you will need to replace “schema_name” and “table_name” with the appropriate schema and table names used for your project.
 
 **Note**: All data is stored under schemas in the projects database.
 

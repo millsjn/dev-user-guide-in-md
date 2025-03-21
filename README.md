@@ -1,2 +1,2 @@
 # dev-user-guide-in-md
-Development space for building user guide in markdown
+This is a development space for building the ADRF user guide in markdown.
