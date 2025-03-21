@@ -20,9 +20,7 @@ To watch the video, **right-click the image below** and choose **"Open link in n
 ### What is a VDE?
 A **virtual desktop environment (VDE)** allows you to interact with a remote system as if it were your own personal computer. The majority of your standard desktop functions are available, but the programs, data, and permissions are all controlled by the remote administrator (Coleridge Initiative). Thus, you will be working in a familiar environment while accessing protected data, programs, and systems that would otherwise be difficult to distribute. The ADRF uses a standard Windows environment (Windows Server) and provides a variety of software packages to conduct your analysis. For more on Windows capabilities, see the section on Windows Settings.
 
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use1.png alt="Virtual Desktop Environment">
-</p>
+![Virtual Desktop Environment](images/use1.png)
 
 ### Temporary Nature of the Environment
 While the environment is similar to that on your home computer (for Windows users), there are a handful of key differences. The first is that the environment is temporary in nature. This means that if you are not using it for a prolonged period of time (default is four hours but can vary by project), running programs will stop running and the information stored in temporary locations will be deleted. You will receive on on-screen message before any sessions are terminated. For more on safe, non-temporary storage locations in the ADRF, see the section on Storing Analytic Results.
