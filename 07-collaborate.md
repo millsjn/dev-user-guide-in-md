@@ -14,4 +14,4 @@ The information contained in the ADRF is restricted to reside only in the ADRF f
 
 ---
 
-[⬅️ Previous: Where to Do Your Work](06-where-to-work.md) | [Back to Home](0-cover.md) | [Next: How to Export Output from the ADRF ➡️](08-export.md)
+[⬅️ Previous: Where to Do Your Work](06-where-to-work.md) | [Back to Home](00-cover.md) | [Next: How to Export Output from the ADRF ➡️](08-export.md)
