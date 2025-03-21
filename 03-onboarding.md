@@ -73,15 +73,15 @@ The Terms of Use need to be completed before you are given access to the data an
 
 ![Click Finish](images/finish.png)
 
-You will then be redirected back to the management portal. And the “Terms of Use” task will be marked as completed.
+You will then be redirected back to the management portal; and the “Terms of Use” task will be marked as completed.
 
 ## Watching the Security Training Video
 
-The Security Training Video needs to be completed as well. 
+You will also need to watch the ADRF Security Training Video. 
 
 ![ADRF Security Training Video](images/security-training-video.png)
 
-To complete the training, complete the following steps:
+To complete this portion of the ADRF Security Training, do the following:
 
 1. Click on the **“Security Training Video”** tile to load the player and then click play.
 2. Once you have watched the video in its entirety, click on the **“Mark as Complete”** button to complete the task. _Note: the “MARK AS COMPLETE” button will not be enabled until at least 5 minutes have passed since the start of the video._
