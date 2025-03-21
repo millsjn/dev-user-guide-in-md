@@ -13,7 +13,7 @@ A detailed guide to help users navigate and use the Coleridge Initiative's Admin
 Last Modified: 03/21/2025
 
 ## Navigation
-- Navigate through the sections for detailed guidance.
+- Click on any of the sections for detailed guidance.
 - You can always return to this page by clicking on "Back to Home" at the bottom of each section page.
 
 
