@@ -109,7 +109,7 @@ Python is a general-purpose programming language. You can access Python in a mul
 ### DBeaver
 **DBeaver** is a universal tool for querying, editing, and managing data stored in Redshift databases. The ADRF stores data using AWS Redshift Server. DBeaver can be accessed through the desktop shortcut DBeaver or by looking it up using the search bar.
 
-Once open, you will need to connect to a Redshift server. Please follow the directions in the [Redshift Querying Guide](11-querying-guide) to connect to the appropriate server.
+Once open, you will need to connect to a Redshift server. Please follow the directions in the [Redshift Querying Guide](11-querying-guide.md) to connect to the appropriate server.
 
 ---
 [⬅️ Previous: Onboarding Modules and Security Training](03-onboarding.md) | [Back to Home](0-cover.md) | [Next: How to Access Data ➡️](05-access-data.md)
