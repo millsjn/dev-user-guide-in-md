@@ -20,10 +20,10 @@ If you are approved to access data that are stored in a database, the data are h
 
 You need to replace the “user.name.project” with your **project workspace username**. The **project workspace username** is your user folder name in the U:/ drive:
 
-![Image of Project-Based User Name](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap1.png)
+![Image of Project-Based User Name](images/ap1.png)
 
 **Note**: You will need to enter your specific user name when logging into Redshift. The password needed to access Redshift is the second password entered when logging into the ADRF as shown in the screen below: 
-![Image of Password Entry](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap2.png)
+![Image of Password Entry](images/ap2.png)
 
 ## Using DBeaver to access a database
 To establish a connection to Redshift in DBeaver, first open DBeaver by clicking on the DBeaver icon located on the ADRF desktop and then double click on the server you wish to connect to. **Note**: All data is stored under schemas in the projects database.
@@ -31,7 +31,7 @@ To establish a connection to Redshift in DBeaver, first open DBeaver by clicking
 In the example below, we will connect to **Redshift11_projects**. After double clicking on Reshift11_projects, a window will appear asking for your **Username** and **Password**. 
 - In Username, enter **"adrf\\"** followed by your **project workspace username** 
 - In Password, enter the password associated with your project workspace username
-![Complete the Username and Password fields](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/ap3.png)
+![Complete the Username and Password fields](images/ap3.png)
 
 After completing the Username and Password fields, click **OK**. You will now have access to your data stored on the Redshift11_projects server.
 

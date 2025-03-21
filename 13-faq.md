@@ -30,15 +30,15 @@ You can reset your ADRF project password by following these steps:
 
 1. Click on the ADRF Management Portal Okta Tile:
 
-![ADRF Management Portal Icon](mp_icon.png)
+![ADRF Management Portal Icon](images/mp_icon.png)
 
 3. Then click on Admin Tasks on the left hand side of the screen:
 
-![Admin Tasks](admin_tasks.png)
+![Admin Tasks](images/admin_tasks.png)
 
 4. Then click on RESET PASSWORD:
 
-![Reset Password](reset_password.png)
+![Reset Password](images/reset_password.png)
 
 You’ll see a screen where you can choose the project(s) for which you want to update the password.
 
