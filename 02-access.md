@@ -24,4 +24,4 @@ If you have any questions, please contact [support@coleridgeinitiative.org](mail
 
 ---
 
-[⬅️ Previous: Inroduction](01-intro.md) | [Back to Home](0-cover.md) | [Next: Onboarding Modules and Security Training ➡️](03-onboarding.md)
+[⬅️ Previous: Inroduction](01-intro.md) | [Back to Home](00-cover.md) | [Next: Onboarding Modules and Security Training ➡️](03-onboarding.md)

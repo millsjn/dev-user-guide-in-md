@@ -23,4 +23,4 @@ The ADRF follows the Five Safes Framework, a data management framework commonly 
 
 ---
 
-[Back to Home](0-cover.md) | [Next: Obtaining ADRF Access ➡️](02-access.md)
+[Back to Home](00-cover.md) | [Next: Obtaining ADRF Access ➡️](02-access.md)
