@@ -42,30 +42,26 @@ Both the U: drive and P: drive have defined resource limitations of 150GB. When 
 
 #### Other Modifications
 The top taskbar contains shortcuts to the command prompt, multiple desktop windows, a temporary folder, settings, full-screen view, and toggling multiple monitors.
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use2.png alt="Taskbar">
-</p>
+
+![Taskbar](images/use2.png)
 
 ### Windows Settings
 Your desktop will look familiar if you are a Windows user. You will have icons for quick access to programs or browsers on your desktop. The windows icon on the bottom left side of the screen will open up a menu of programs, folders, and other tools, much as you would see on your own desktop. You will have access to PowerShell and several customization settings (e.g., remove bottom taskbar).
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use3.png alt="Desktop">
-</p>
+
+![Desktop](images/use3.png)
 
 ## Software in the ADRF
 ### JupyterLab
 **JupyterLab** provides flexible building blocks for interactive, exploratory computing. While JupyterLab has many features found in traditional integrated development environments (IDEs), it remains focused on interactive, exploratory computing. For more on JupyterLab, see the interface documentation.
 
 The JupyterLab interface on the ADRF consists of a main work area containing tabs of documents and activities, a collapsible left sidebar, and a menu bar. The left sidebar contains a file browser, the list of running terminals and kernels, the table of contents, and the extension manager.
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use4.png alt="JupyterLab">
-</p>
+![JupyterLab](images/use4.png)
+
 
 When using Jupyter Notebooks, make sure that all your work is saved to your U: drive and the correct director within the U: drive. You can “nd the active directory by reading the path displayed in the file browser. By default, JupyterLab opens with your U: drive as the base directory. Below, the folder icon in the white box is my user folder (not displayed, but titled `Firstname.Lastname`; you will have already set up your folder) and subfolder WDQI.
 
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use5.png alt="Make sure your work is saved to your U: drive">
-</p>
+![Make sure your work is saved to your U: drive](images/use5.png)
+
 
 #### Notebooks
 Jupyter Notebooks are documents that combine live runnable code with narrative text (Markdown), equations (LaTeX), images, interactive visualizations, and other rich output. You can create a notebook by clicking the blue + button in the file browser and then selecting a kernel (R, Python3, Stata) in the Launcher tab. For more information on getting started with Jupyter Notebooks, see JupyterLab Notebook documentation.
@@ -78,27 +74,22 @@ Python is a general-purpose programming language. You can access Python in a mul
 
 1. **Through JupyterLab**. This is the **recommended way** to access Python since it has packages installed and available, and an execution environment for testing and running code (as well as a place to write and save code). Open JupyterLab and make sure your directory is set appropriately in the “le browser. Once there, in your new Launcher window, click the Python 3 icon.
 
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use8.png alt="JupyterLab">
-</p>
+![JupyterLab(images/use8.png)
 
 2. **Through the start menu (windows icon)**. Type in Python. A desktop app called Python 3.7 (64-bit) will populate a window where you can begin programming.
 
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use6.png alt="Start menu">
-</p>
+![Start menu](images/use6.png)
+
 
 3. **Through the command prompt in the top taskbar**. Once the command prompt window is open, type in python.
 
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use7.png alt="Command Prompt">
-</p>
+![Command Prompt](images/use7.png)
+
 
 4. **Through Pycharm**
 
-<p align="left">
-  <img src=https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use9.png alt="Pycharm">
-</p>
+![Pycharm](images/use9.png)
+
 
 ### R
 
@@ -118,7 +109,7 @@ Python is a general-purpose programming language. You can access Python in a mul
 ### DBeaver
 **DBeaver** is a universal tool for querying, editing, and managing data stored in Redshift databases. The ADRF stores data using AWS Redshift Server. DBeaver can be accessed through the desktop shortcut DBeaver or by looking it up using the search bar.
 
-Once open, you will need to connect to a Redshift server. Please follow the directions in the [Redshift Querying Guide](#11-redshift-querying-guide) to connect to the appropriate server.
+Once open, you will need to connect to a Redshift server. Please follow the directions in the [Redshift Querying Guide](11-querying-guide) to connect to the appropriate server.
 
 ---
 [⬅️ Previous: Onboarding Modules and Security Training](03-onboarding.md) | [Back to Home](0-cover.md) | [Next: How to Access Data ➡️](05-access-data.md)
