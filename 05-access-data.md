@@ -19,7 +19,7 @@ The G: Drive is located in the ADRF's file system. You can find it by going to t
 ## Accessing data stored in structured data storage
 Structured data, or data that are stored in relational databases, are stored in AWS Redshift, an MPP platform that is built on SQL and is specifically designed to handle larger data assets. Users access structured data either through **DBeaver** – the ADRF's Database Access tool – or by porting directly to Redshift through their preferred **statistical package** (like R, or Python).
 
-For detailed instructions on how to access data in structed data storage, please see the ADRF's [Redshift Querying Guide](11-redshift-querying-guide.md)
+For detailed instructions on how to access data in structed data storage, please see the ADRF's [Redshift Querying Guide](11-querying-guide.md)
 
 ---
 
