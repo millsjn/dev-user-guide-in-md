@@ -8,7 +8,7 @@
 
 # ADRF User Guide
 
-A detailed guide to help users navigate and use the **Coleridge Initiative's** Administrative Data Research Facility (ADRF) effectively.
+A detailed guide to help users navigate and use the Coleridge Initiative's Administrative Data Research Facility (ADRF) effectively.
 
 Last Modified: 03/20/2025
 
