@@ -77,7 +77,11 @@ You will then be redirected back to the management portal. And the “Terms of U
 
 ## Watching the Security Training Video
 
-The Security Training Video needs to be completed as well. To complete the training, complete the following steps:
+The Security Training Video needs to be completed as well. 
+
+![ADRF Security Training Video](images/security-training-video.png)
+
+To complete the training, complete the following steps:
 
 1. Click on the **“Security Training Video”** tile to load the player and then click play.
 2. Once you have watched the video in its entirety, click on the **“Mark as Complete”** button to complete the task. _Note: the “MARK AS COMPLETE” button will not be enabled until at least 5 minutes have passed since the start of the video._
