@@ -14,7 +14,7 @@ The ADRF offers both unstructured and structured data storage. Data stored in da
 Unstructured data, such as CSVs, Stata DTAs, SAS data, are stored in the “G” drive. Project teams will have read-only access to the data folders in this drive that they have been approved to access.
 
 The G: Drive is located in the ADRF's file system. You can find it by going to the Folder icon in the Windows Task Bar.
-![Locating the G: Drive](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/acc1.png)
+![Locating the G: Drive](images/acc1.png)
 
 ## Accessing data stored in structured data storage
 Structured data, or data that are stored in relational databases, are stored in AWS Redshift, an MPP platform that is built on SQL and is specifically designed to handle larger data assets. Users access structured data either through **DBeaver** – the ADRF's Database Access tool – or by porting directly to Redshift through their preferred **statistical package** (like R, or Python).

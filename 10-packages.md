@@ -20,7 +20,7 @@ install.packages("packagename")
 
 ** Example**: Installing `tidyverse`
 
-![Install tidyverse](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/rinstall.png)
+![Install tidyverse](images/rinstall.png)
 
 To install a specific package version you can specify:
 
@@ -38,11 +38,11 @@ Similar to R packages, Python packages may be installed using the Package Instal
 
 **Note**: We recommend installing python packages from the command line. If you start Jupyter lab, and choose the Terminal tab:
 
-![If you start Juypter Lab, choose the Terminal tab](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/pythoninstall.png)
+![If you start Juypter Lab, choose the Terminal tab](images/pythoninstall.png)
 
 Then install your package using pip, for example, to install the pandas package:
 
-![Example: pandas package installation](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/pip.png)
+![Example: pandas package installation](images/pip.png)
 
 Then you may use the package within your Jupyter notebook as usual.
 

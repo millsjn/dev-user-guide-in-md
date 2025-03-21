@@ -79,24 +79,24 @@ To request an export be reviewed, please follow the instructions below or you ca
 2. Input your login credentials.
 3. Verify yourself with Okta (download Okta Verify on your smartphone or other device).
 4. Choose your project as seen in the photo below. For the purpose of this document, you are seeing the Coleridge Initiative Associate Access project.
-![Choose your project](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/exp1.png)
+![Choose your project](images/exp1.png)
 5. Select Desktop and login with the same credentials you had done previously.
 6. Upon entering the ADRF, a Google Chrome page will appear as shown in the photo below (the **Getting Started** page). On this page, click on the **Export Request** tile. Or, from the ADRF desktop, open Google Chrome and navigate to export.adrf.net. (Note: export.adrf.net is an address that will only work within the ADRF desktop).
-![Go to the Export Module](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/exp2.png)
+![Go to the Export Module](images/exp2.png)
 7. Click **My Requests**, or the top (person-shaped) icon, at the left side of the window as shown in the screenshot below.
-![Click on My Requests](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/exp3.png)
+![Click on My Requests](images/exp3.png)
 8. Click **New Item** as shown below
-![Click on New Item](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/exp4.png)
+![Click on New Item](images/exp4.png)
   - You will be asked to select the project to which your export relates. If you do not see the correct project listed in the dropdown list, please reach out to our support team at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org).
 9. After selecting a project, click **Continue**.
-![Click "Continue"](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/exp5.png)
+![Click "Continue"](images/exp5.png)
 10. Read through the entire page that loads. This page, titled “Create Export Request,” will ask for you to comment on all supporting code files to explain the commands used to generate the files in the export request. The Export Review team will reject all requests containing intermediate output. The Export Review team will typically release export requests within five business days. However, if the team has any clarifying questions, this could result in a longer review process. You need to document your output files in the text box provided. See the example below:
-![Read all instructions](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/exp6.png)
+![Read all instructions](images/exp6.png)
 11. When you have read through and followed the page instructions, and are ready to proceed:
   - Move the slider at the bottom of the page to **indicate that you have followed the page’s guidelines**.
   - At the bottom of the page, **upload each of the files that you have prepared**.
   - Click **Submit Request…** to create the export request.
-![Submit Request](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/exp7.png)
+![Submit Request](images/exp7.png)
 12. You can click My Requests at the left side of the window to view your current and previous export requests.
 
 **Note**: To learn more about exporting results, you can watch an instructional video by [right-clicking this link](https://www.youtube.com/watch?v=qXG_i0v_bDQ).
