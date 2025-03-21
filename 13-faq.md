@@ -13,7 +13,7 @@
 - [Where can I access publicly available data from within the ADRF?](#where-can-i-access-publicly-available-data-from-within-the-adrf)
 - [Where is my project or training related data stored?](#where-is-my-project-or-training-related-data-stored)
 - [My data is not in a relational format. Where can I find these files?](#my-data-is-not-in-a-relational-format.-where-can-i-find-these-files)
-- [What is the difference between the P:, U: and G: drives?](#what-is-the-difference-between-the-p:,-u:-and-g:-drives)
+- [What is the difference between the P:, U: and G: drives?](#what-is-the-difference-between-the-p-u-and-g-drives)
 - [I need to process a large amount of relational data. What is the destination location?](#i-need-to-process-a-large-amount-of-relational-data.-what-is-the-destination-location)
 
 ## How do I set up my Multifactor Authentication
