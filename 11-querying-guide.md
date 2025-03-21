@@ -291,12 +291,13 @@ Note that even if joining column `col_A` has an index, the `col_B` column does n
 **Efficient**
 
 ``` sql
-SET search_path = schema_name; -- this statement sets the default schema/database to projects.schema_name
+SET search_path = schema_name;
 ```
+Note: This statement sets the default schema/database to projects.schema_name
 
 Step 1:
 
-`
+``` sql
 CREATE TEMP TABLE temp_table (col_A varchar(14), col_B varchar(178), col_C varchar(4));
 ```
 
@@ -308,23 +309,27 @@ FROM projects.schema_name.table_name WHERE col_B like 'CAT%';
 ```
 Step 3:
 
+``` sql
 SELECT pd.col_A, pd.col_B, pd.col_C, sum(col_C) as total FROM temp_table pd INNER JOIN projects.schema_name.table_name st ON pd.col_A=st.col_B GROUP BY pd.col_A, pd.col_B, pd.col_C;
 
 DROP TABLE temp_table;
+```
 
 Note always drop the temp table after the analysis is complete to release data from physical memory.
 
-Other Pointers for best database performance
-SELECT columns, not stars. Specify the columns you’d like to include in the results (though it’s fine to use * when first exploring tables — just remember to LIMIT your results).
+### Other Pointers for best database performance
 
-Avoid using SELECT DISTINCT. SELECT DISTINCT command in Amazon Redshift used for fetching unique results and remove duplicate rows in the relation. To achieve this task, it basically groups together related rows and then removes them. GROUP BY operation is a costly operation. To fetch distinct rows and remove duplicate rows, use more attributes in the SELECT operation.
+**`SELECT` columns, not stars**. Specify the columns you’d like to include in the results (though it’s fine to use `*` when first exploring tables — just remember to LIMIT your results).
 
-Inner joins vs WHERE clause. Use inner join for merging two or more tables rather than using the WHERE clause. WHERE clause creates the CROSS join/ CARTESIAN product for merging tables. CARTESIAN product of two tables takes a lot of time.
+**Avoid using `SELECT DISTINCT`**. The `SELECT DISTINCT1 command in Amazon Redshift used for fetching unique results and remove duplicate rows in the relation. To achieve this task, it basically groups together related rows and then removes them. GROUP BY operation is a costly operation. To fetch distinct rows and remove duplicate rows, use more attributes in the SELECT operation.
 
-IN versus EXISTS. IN operator is costlier than EXISTS in terms of scans especially when the result of the subquery is a large dataset. We should try to use EXISTS rather than using IN for fetching results with a subquery.
+Inner joins vs `WHERE` clause. Use inner join for merging two or more tables rather than using the `WHERE` clause. The `WHERE` clause creates the CROSS join/ CARTESIAN product for merging tables. The CARTESIAN product of two tables takes a lot of time.
 
-Avoid
+`IN` versus `EXISTS`. The `IN` operator is costlier than `EXISTS` in terms of scans especially when the result of the subquery is a large dataset. We should try to use `EXISTS` rather than using `IN` for fetching results with a subquery.
 
+**Avoid**
+
+``` sql
 SELECT col_A , col_B, col_C
 
 FROM projects.schema_name.table_name
@@ -332,9 +337,11 @@ FROM projects.schema_name.table_name
 WHERE col_A IN
 
 (SELECT col_B FROM projects.schema_name.table_name WHERE col_B = 'DOG')
+```
 
-Prefer
+**Prefer**
 
+``` sql
 SELECT col_A , col_B, col_C
 
 FROM projects.schema_name.table_name
@@ -344,7 +351,7 @@ WHERE EXISTS
 (SELECT col_A FROM projects.schema_name.table_name b WHERE
 
 a.col_A = b.col_B and b.col_B = 'DOG')
-
+```
 Query optimizers can change the order of the following list, but this general lifecycle of a Amazon Redshift query is good to keep in mind when writing Amazon Redshift.
 
 FROM (and JOIN) get(s) the tables referenced in the query.
