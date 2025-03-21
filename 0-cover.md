@@ -1,7 +1,7 @@
 ---
 
 <p align="center">
-    <img src="coleridge-logo.png" alt="Coleridge Logo">
+    <img src="images/coleridge-logo.png" alt="Coleridge Logo">
 </p>
 
 ---
