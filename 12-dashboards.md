@@ -65,4 +65,4 @@ Once you enter the appropriate information and click “Log In,” your dashboar
 
 ---
 
-[⬅️ Previous: Redshift Querying Guide](11-querying-guide.md) | [Back to Home](0-cover.md) | [Next: FAQ ➡️](13-faq.md ))
+[⬅️ Previous: Redshift Querying Guide](11-querying-guide.md) | [Back to Home](00-cover.md) | [Next: FAQ ➡️](13-faq.md ))
