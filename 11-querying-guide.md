@@ -492,4 +492,4 @@ It helps to analyze the major phases in the execution of a query. We can also fi
 
 ---
 
-[⬅️ Previous: Adding Additional Packages in R/Python](10-packages.md) | [Back to Home](0-cover.md) | [Next: Accessing ADRF Dashboards ➡️](12-dashboards.md) 
+[⬅️ Previous: Adding Additional Packages in R/Python](10-packages.md) | [Back to Home](00-cover.md) | [Next: Accessing ADRF Dashboards ➡️](12-dashboards.md) 
