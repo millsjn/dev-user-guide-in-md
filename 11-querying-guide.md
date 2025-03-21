@@ -14,7 +14,6 @@ This document serves as an introduction to generating proficient Amazon Redshift
   - [Connecting to a database using Python](#connecting-to-a-database-using-python)
   - [Connecting to a database using Stata](#connecting-to-a-database-using-stata)
 - [Redshift Query Guidelines for Researchers](#redshift-query-guidelines-for-researchers)
-- [Query Tips and Best Practices](#query-tips-and-best-practices)
 
 ## Data access
 If you are approved to access data that are stored in a database, the data are housed in Redshift. To access those data, you will have to log in to Redshift within your workspace.
