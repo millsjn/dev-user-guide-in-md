@@ -52,4 +52,4 @@ pip install pandas==1.2.3
 ```
 
 ---
-[⬅️ Previous: Do's and Don'ts for Discussing Data Hosted in the ADRF](09-dos-and-donts.md) | [Back to Home](0-cover.md) | [Next: Redshift Querying Guide ➡️](11-querying-guide.md)
+[⬅️ Previous: Do's and Don'ts for Discussing Data Hosted in the ADRF](09-dos-and-donts.md) | [Back to Home](00-cover.md) | [Next: Redshift Querying Guide ➡️](11-querying-guide.md)
