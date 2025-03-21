@@ -6,7 +6,7 @@ Some users will be approved to access an ADRF Dashboard. This section provides s
 
 ## Topics
 - [Step 1: Setting your dashboard access password](#step-1-setting-your-dashboard-access-password)
-
+- [Step 2: Accessing the Dashboard](#step-2-accessing-the-dashboard)
 
 ## Step 1: Setting your dashboard access password
 Once you have completed the management portal onboarding tasks, you will next need to set your **dashboard access password**. This is separate from the first password you use to access the ADRF through Okta, and will instead be used to provide specific access to the dashboard. **You should only need to do this the first time you access the dashboard, but you can always follow these instructions if you need to update or reset your dashboard access password in the future.**
