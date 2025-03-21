@@ -284,30 +284,28 @@ This is especially useful when there are no indexes on the join columns.
 
 **Inefficient**
 
-SELECT col_A, col_B, sum(col_C) total FROM projects.schema_name.table_name pd INNER JOIN projects.schema_name.table_name st ON pd.col_A=st.col_B WHERE pd.col_C like 'DOG%' GROUP BY pd.col_A, pd.col_B, pd.col_C
+`SELECT col_A, col_B, sum(col_C) total FROM projects.schema_name.table_name pd INNER JOIN projects.schema_name.table_name st ON pd.col_A=st.col_B WHERE pd.col_C like 'DOG%' GROUP BY pd.col_A, pd.col_B, pd.col_C`
 
-Note that even if joining column col_A has an index, the col_B column does not. In addition, because the size of some tables can be large, one should limit the size of the join table by first building a smaller filtered #temp table then performing the table joins.
+Note that even if joining column `col_A` has an index, the `col_B` column does not. In addition, because the size of some tables can be large, one should limit the size of the join table by first building a smaller filtered `#temp` table then performing the table joins.
 
-Efficient
+**Efficient**
 
+``` sql
 SET search_path = schema_name; -- this statement sets the default schema/database to projects.schema_name
+```
 
 Step 1:
 
-CREATE TEMP TABLE temp_table (
-
-col_A varchar(14),
-
-col_B varchar(178),
-
-col_C varchar(4) );
+`
+CREATE TEMP TABLE temp_table (col_A varchar(14), col_B varchar(178), col_C varchar(4));
+```
 
 Step 2:
 
+``` sql
 INSERT INTO temp_table SELECT col_A, col_B, col_C
-
 FROM projects.schema_name.table_name WHERE col_B like 'CAT%';
-
+```
 Step 3:
 
 SELECT pd.col_A, pd.col_B, pd.col_C, sum(col_C) as total FROM temp_table pd INNER JOIN projects.schema_name.table_name st ON pd.col_A=st.col_B GROUP BY pd.col_A, pd.col_B, pd.col_C;
