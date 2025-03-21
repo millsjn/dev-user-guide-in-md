@@ -97,6 +97,7 @@ The Security Training Quiz needs to be completed after the Security Training Vid
 ![Click on the Submit Response button](images/submit_response.png)
 
 3. You will be automatically redirected to the main task panel once the questionnaire has been successfully completed. And the **“Security Quiz”** will be marked as completed.
+
 ![Security Quiz Complete](images/security_quiz_complete.png) 
 
 ---
