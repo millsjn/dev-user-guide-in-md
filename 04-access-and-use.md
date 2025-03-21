@@ -14,7 +14,7 @@ This video linked below runs through the necessary steps for logging into and lo
 
 To watch the video, **right-click the image below** and choose **"Open link in new tab"** (by right-cicking, you will avoid leaving this page).
 
-[![Logging into ADRF](https://img.youtube.com/vi/_-AE_iOyF9w/0.jpg)](https://www.youtube.com/watch?v=_-AE_iOyF9w)
+![Logging into ADRF](https://img.youtube.com/vi/_-AE_iOyF9w/0.jpg)](https://www.youtube.com/watch?v=_-AE_iOyF9w)
 
 ## Virtual Desktop Environment
 ### What is a VDE?
@@ -74,7 +74,7 @@ Python is a general-purpose programming language. You can access Python in a mul
 
 1. **Through JupyterLab**. This is the **recommended way** to access Python since it has packages installed and available, and an execution environment for testing and running code (as well as a place to write and save code). Open JupyterLab and make sure your directory is set appropriately in the “le browser. Once there, in your new Launcher window, click the Python 3 icon.
 
-![JupyterLab(images/use8.png)
+![JupyterLab](images/use8.png)
 
 2. **Through the start menu (windows icon)**. Type in Python. A desktop app called Python 3.7 (64-bit) will populate a window where you can begin programming.
 
@@ -96,8 +96,8 @@ Python is a general-purpose programming language. You can access Python in a mul
 **R** is a general-purpose programming language. You may access R in one of three ways:
 
 1. **Through RStudio**. This is an integrated development environment (IDE) for R. You can run R code, display variables, debug R code, do inline visualizations, and more. Open RStudio through the desktop shortcut, or type RStudio in the start menu.
-2. 
-3. **Through JupyterLab**. Open JupyterLab and make sure your directory is set appropriately in the file browser. Once there, in your new Launcher window, click the R icon.
+   
+2. **Through JupyterLab**. Open JupyterLab and make sure your directory is set appropriately in the file browser. Once there, in your new Launcher window, click the R icon.
 
 ![Using R in JuypterLab](https://coleridge-initiative.github.io/adrf_onboarding_handbook/images/use10.png)
 
