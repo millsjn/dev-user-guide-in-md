@@ -1,15 +1,3 @@
----
-<p align = "center"
-  <img src = "images/coleridge-logo.png">
-</p>
-
----
-
-[⬅️ Previous: Inroduction](01-intro.md) | [Back to Home](00-cover.md) | [Next: Onboarding Modules and Security Training ➡️](03-onboarding.md)
-
----
-
-
 # ADRF User Guide
 
 _A detailed guide to help users navigate and use the **Coleridge Initiative's** Administrative Data Research Facility (ADRF) effectively._
