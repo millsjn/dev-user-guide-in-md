@@ -2,6 +2,8 @@
 
 Welcome to the [Coleridge Initiative’s](https://coleridgeinitiative.org/) Administrative Data Research Facility, or "**ADRF**" user guide. This is a living document intended to show new ADRF users how to use the platform for common tasks.
 
+If you have any questions, please reach out to us at [support@coleridgeinitiative.org](mailto:support@coleridgeinitiative.org) 
+
 ## Topics
 - [About the Coleridge Initiative](#about-the-coleridge-initiative)
 - [About the Administrative Data Research Facility](#about-the-administrative-data-research-facility)
